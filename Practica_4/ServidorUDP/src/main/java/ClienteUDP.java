@@ -29,7 +29,7 @@ class ClienteUDP {
             escribir en consola unicamente la direccion ip, y no todo el datagrampacket*/
             direccionIp = new String(paqueteRecepcion.getData(),
                     0, paqueteRecepcion.getLength(), StandardCharsets.UTF_8).trim();
-            System.out.print(direccionIp);
+            System.out.print(direccionIp+"\n");
             socketUDP.close();
         } catch (IOException IO) {
             IO.printStackTrace();
