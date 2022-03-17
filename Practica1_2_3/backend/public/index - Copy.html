@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tickets</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="estilomio.css">
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="card text-white bg-dark mb-3" style="height: 100%;">
+
+        <a href="nuevo.html"> <button type="button" class="btn btn-dark"
+                style="position: absolute; top: 0cm; left:2.5cm; width: 100px; height: 37px;font-size: small;">Nuevo
+                ticket</button> </a>
+        <div class="card-header">Tickets</div>
+
+    </div>
+
+    <div class="card" style="width: 15cm; left: 32%">
+        <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">
+
+                <h5><del>Zapateria Shoes</del></h5>
+                <p>2021-10-31 - Fallo al agregar productos al catálogo</p>
+
+                <button type="button" class="btn btn-warning"
+                    style="position: relative; top: 0cm; width: 180px; height: 37px;font-size: small;">Marcar como
+                    pendiente</button>
+
+                    <a href="editar.html"> <button type="button" class="btn btn-primary"
+                        style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Editar</button> </a>
+
+                <button type="button" class="btn btn-danger"
+                    style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Eliminar</button>
+
+            </li>
+
+            <li class="list-group-item">
+
+                <h5>Banco solidario</h5>
+                <p>2021-11-22 - Añadir nueva opción de informe consolidado</p>
+
+                <button type="button" class="btn btn-success"
+                    style="position: relative; top: 0cm; width: 180px; height: 37px;font-size: small;">Marcar como
+                    terminado</button>
+
+                    <a href="editar.html"> <button type="button" class="btn btn-primary"
+                        style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Editar</button> </a>
+
+                <button type="button" class="btn btn-danger"
+                    style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Eliminar</button>
+
+            </li>
+
+            <li class="list-group-item">
+
+                <h5><del>Paresa</del></h5>
+                <p>2021-1-2 - Mejorar rendimientos informes</p>
+
+                <button type="button" class="btn btn-warning"
+                    style="position: relative; top: 0cm; width: 180px; height: 37px;font-size: small;">Marcar como
+                    pendiente</button>
+
+                    <a href="editar.html"> <button type="button" class="btn btn-primary"
+                        style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Editar</button> </a>
+
+                <button type="button" class="btn btn-danger"
+                    style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Eliminar</button>
+
+            </li>
+
+            <li class="list-group-item">
+
+                <h5>Axis Sistemas</h5>
+                <p>2021-1-3 - Presupuesto nueva página web</p>
+
+                <button type="button" class="btn btn-success"
+                    style="position: relative; top: 0cm; width: 180px; height: 37px;font-size: small;">Marcar como
+                    terminado</button>
+
+                    <a href="editar.html"> <button type="button" class="btn btn-primary"
+                        style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Editar</button> </a>
+
+                <button type="button" class="btn btn-danger"
+                    style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Eliminar</button>
+
+            </li>
+
+            <li class="list-group-item">
+
+                <h5>Easy Soft</h5>
+                <p>2021-1-3 - Adecuación de la configuración de red</p>
+
+                <button type="button" class="btn btn-success"
+                    style="position: relative; top: 0cm; width: 180px; height: 37px;font-size: small;">Marcar como
+                    terminado</button>
+
+                <a href="editar.html"> <button type="button" class="btn btn-primary"
+                    style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Editar</button> </a>
+
+                <button type="button" class="btn btn-danger"
+                    style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Eliminar</button>
+
+            </li>
+
+    </div>
+
+
+    </ul>
+    </div>
+
+
+    <p id="datos"></p>
+    <script>
+        fetch('/tickets')
+            .then(res => res.text())
+            .then(res => document.querySelector('#datos').innerHTML = res)
+    </script>
+
+
+
+
+</body>
+
+</html>

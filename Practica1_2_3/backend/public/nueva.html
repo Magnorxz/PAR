@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tareas</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="card text-white bg-dark mb-3" style="height: 100%;">
+
+      
+        <div class="card-header">Tareas</div>
+
+    </div>
+
+    <div class="card" style="width: 15cm; left: 32%; border: none; bottom: -2cm;">
+    <form method="post" action="/nueva">
+        <div class="form-group" >
+          <label for="exampleInputEmail1">Cliente</label>
+          <input type="text" class="form-control" name="cliente">
+          <small id="clienteHelp" class="form-text text-muted"><p>Denominación del cliente que hace la solicitud</p></small>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Solicitud</label>
+          <input type="text" class="form-control" name="solicitud">
+          <small id="solicitudHelp" class="form-text text-muted">Descripcion completa de la solicitud efectuada</small>
+        </div>
+        <div class="form-group form-check">
+          
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar solicitud</button>
+      </form>
+
+
+    </div>
+
+</body>
+
+</html>

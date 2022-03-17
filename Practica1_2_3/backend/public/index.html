@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tickets</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="estilomio.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="card text-white bg-dark mb-3" style="height: 100%;">
+
+        <a href="nueva.html"> <button type="button" class="btn btn-dark"
+                style="position: absolute; top: 0cm; left:2.5cm; width: 100px; height: 37px;font-size: small;">Nuevo
+                ticket</button> </a>
+        <div class="card-header">Tickets</div>
+
+    </div>
+
+    <div class="card" id="lista-tickets" style="width: 15cm; left: 32%;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="lista-tickets">
+
+                <h5><del>Paresa</del></h5>
+                <p>2021-1-2 - Mejorar rendimientos informes</p>
+
+                <button type="button" class="btn btn-warning" id="miBoton" onclick="cambiarboton()"
+                    style="position: relative; top: 0cm; width: 180px; height: 37px;font-size: small; border: none;">Marcar
+                    como
+                    pendiente</button>
+
+                <a href="editar.html"> <button type="button" class="btn btn-primary"
+                        style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Editar</button>
+                </a>
+
+                <button type="button" class="btn btn-danger"
+                    style="position: relative; top: 0cm; width: 75px; height: 37px;font-size: small;">Eliminar</button>
+
+            </li>
+        </ul>
+
+    </div>
+
+
+</body>
+<script type="text/javascript" src="miseventos.js" defer> </script>
+
+</html>

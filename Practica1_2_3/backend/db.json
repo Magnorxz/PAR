@@ -1,0 +1,25 @@
+{
+  "tickets": [
+    {
+      "id": "c621231b-b173-4d8d-a5c8-1f70d3f0c825",
+      "cliente": "dssss",
+      "solicitud": "Fallo al agregar productos al catálogo",
+      "fecha": "2021-10-31",
+      "completada": true
+    },
+    {
+      "id": "c423531b-kk76-4f8f-a5c8-1f70d3f0c825",
+      "cliente": "Herboristeria Flowers",
+      "solicitud": "Error al buscar una especie de flores en el inventario",
+      "fecha": "2021-12-21",
+      "completada": true
+    },
+    {
+      "id": "5b0ed16c-0c9e-41bb-a50a-e7cc391a666f",
+      "cliente": "prueba2",
+      "solicitud": "prueba3",
+      "fecha": "2018-11-26T09:29:00.200Z",
+      "terminada": false
+    }
+  ]
+}
